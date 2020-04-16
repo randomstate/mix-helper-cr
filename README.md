@@ -3,7 +3,9 @@
 Laravel Mix helper for including laravel mix assets in your templates.
 
 [x] Support for mix-manifest files in custom directories
+
 [x] Switch between hot reload and versioned assets without changing your templates
+
 [x] Caches manifest files after first read to prevent repeated file access
 
 ## Installation
