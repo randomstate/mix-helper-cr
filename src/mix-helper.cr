@@ -4,7 +4,7 @@ require "./exceptions/*"
 module Mix::Helper
   extend self
 
-  def mix(path, manifest_dir = "")
+  def mix(path, manifest_dir = "") : String
     path = "/#{path.lchop("/")}"
     manifest_path = Path[Dir.current].join(manifest_dir, "/mix-manifest.json")
     hot_path = Path[Dir.current].join(manifest_dir, "/hot")
@@ -43,7 +43,7 @@ module Mix::Helper
     
     MixCache.manifests[manifest_path] = manifest_json
 
-    manifest_json[path]
+    manifest_json[path].to_s
   end
 
   private class MixCache 
