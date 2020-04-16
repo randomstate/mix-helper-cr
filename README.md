@@ -14,7 +14,7 @@ Laravel Mix helper for including laravel mix assets in your templates.
 
    ```yaml
    dependencies:
-     mix-helper-cr:
+     mix-helper:
        github: randomstate/mix-helper-cr
    ```
 
